@@ -1,0 +1,85 @@
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
+}
+.contenido{
+  margin: 0 auto;
+}
+@media (min-width:900px){
+  .contenido{width: 900px;}
+  section{display: flex;
+          flex-direction: column;
+          justify-content: space-around;}
+  section div img{width: 33.333%}
+  }
+
+@media (max-width:900px) {
+  .contenido{width: 100%}
+  h1{color: blue}
+  header{flex-direction: column;}
+  .contenedor-sec{flex-direction: column;}
+  section div{display: flex;
+              flex-direction: column;}
+section div img{width: 100%;}
+footer{flex-direction: column;}
+  }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  padding: 1%;
+  color: white;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+}
+
+h1{
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+.contenedor-central {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0.5%;
+background-color: #82c3a6;
+}
+
+.contenedor-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5%;
+  border: solid 1px;
+  background-color: #d5c75f;
+  text-align: center;
+}
+#img001, #img002{
+  -webkit-box-shadow:5px 5px 5px #82c3a6;}
+#img001:hover {-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+#img002:hover {-webkit-transform: translate(20px, -5px);}
+
+
+section{
+  padding: 0.5%;
+  border: solid 1px;
+  background-color: #d5c75f;
+}
+ #img01{filter: blur(10px);}
+ #img02, #img04, #img06{filter: grayscale(100%);}
+ #img03{filter: sepia(90%);}
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #c6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
